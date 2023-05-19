@@ -2,9 +2,11 @@ name: On Create Branch
 
 # Trigger only on creation of a branch with the given pattern
 on:
-  create:
+  push:
+    types:
+      - created
     branches:
-      - 'release/v*-rc'
+      - releases/v*-rc
 
 jobs:
   build:
