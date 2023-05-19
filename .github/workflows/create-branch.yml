@@ -5,8 +5,8 @@ on:
   push:
     types:
       - created
-    branches:
-      - releases/v*-rc
+#    branches:
+#      - releases/v*-rc
 
 jobs:
   build:
