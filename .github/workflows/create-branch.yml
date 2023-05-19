@@ -4,7 +4,7 @@ name: On Create Branch
 on:
   create:
     branches:
-      - 'release*'
+      - 'release**'
 
 jobs:
   build:
