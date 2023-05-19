@@ -2,7 +2,9 @@ name: On Create Branch
 
 # Trigger only on creation of a branch with the given pattern
 on:
-  create: release/v
+  create:
+    tags:
+      - '!*'
 
 jobs:
   build:
